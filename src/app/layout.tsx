@@ -25,7 +25,7 @@ export default function RootLayout({
     return (
 
         <html dir="ltr" lang="eng">
-          <body className="">
+          <body className="bg-slate-500">
           {children}
           </body>
         </html>
