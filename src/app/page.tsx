@@ -12,7 +12,7 @@ export default function Home() {
             <div className={"flex flex-cols-2 "}>
 
                 {/*navbar*/}
-                <div className={"bg-white w-34/40 fixed right-0 flex flex-col-2 p-5 justify-between"}>
+                <div className={"bg-white w-34/40 fixed right-0 flex flex-col-2 p-4 justify-between"}>
 
                     {/*left side*/}
                     <div className={" w-5/10 flex"}>
@@ -25,7 +25,7 @@ export default function Home() {
                             />
                             {/* آیکون ذره‌بین (می‌توانید از هر آیکون‌ست مثل Heroicons استفاده کنید) */}
                             <svg
-                                className="absolute left-3 top-2.5 h-4 w-4 text-gray-400"
+                                className="absolute left-3 top-3 h-4 w-4 text-gray-400"
                                 fill="none"
                                 stroke="currentColor"
                                 viewBox="0 0 24 24"
