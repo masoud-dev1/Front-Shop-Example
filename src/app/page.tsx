@@ -1,6 +1,7 @@
 'use client';
 
-import {Navbar} from "@/component/admin/navbar/navbar";
+import {Navbar} from "@/component/admin/navbar";
+import Sidebar from "@/component/admin/sidebar/sidebar";
 
 export default function Home() {
     return (
@@ -14,9 +15,7 @@ export default function Home() {
                 {/*navbar*/}
                 <Navbar/>
                 {/*Side Bar */}
-                <div className={"bg-sky-200 w-6/40 h-237 fixed left-0"}>
-
-                </div>
+                <Sidebar/>
             </div>
 
             <div className={"h-10000 w-222"}>sd</div>
