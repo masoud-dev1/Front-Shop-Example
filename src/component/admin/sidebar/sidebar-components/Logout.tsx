@@ -27,7 +27,7 @@ export default function Logout(){
                                     />
                                 </div>
                                 <span className={` me-4 ${clicked === 16 ? 'text-white' : 'text-gray-700'} `}>
-                                    Team
+                                    Logout
                             </span>
                                 <div className={"bg-red-300 invisible"}>sssss
 

@@ -27,7 +27,7 @@ export default function Setting(){
                                     />
                                 </div>
                                 <span className={` me-4 ${clicked === 15 ? 'text-white' : 'text-gray-700'} `}>
-                                    Team
+                                    Setting
                             </span>
                                 <div className={"bg-red-300 invisible"}>sssss
 
