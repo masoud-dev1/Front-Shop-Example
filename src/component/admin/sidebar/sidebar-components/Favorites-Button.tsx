@@ -16,10 +16,21 @@ export default function FavoritesButton(){
                 </div>
                 {isOpen
                     ? <div className={" w-9/10 flex justify-start"}>
-                        <div className={`${clicked === 3 ? 'bg-blue-400 ' : 'bg-white'} w-9/10 rounded-lg items-center duration-150 end-auto flex justify-center cursor-pointer`} onClick={() => dispatch(setNumber(3))}>
-                                <span className={` ${clicked === 3 ? 'text-white' : 'text-gray-700'} `}>
-                                    Favorites
+                        <div className={`${clicked === 3 ? 'bg-blue-400 ' : 'bg-white'} w-9/10 rounded-lg items-center duration-150 end-auto flex justify-between cursor-pointer`} onClick={() => dispatch(setNumber(3))}>
+                            <div className={`${clicked === 3 ? 'invisible' : 'visible'}`}>
+                                <Image
+                                    src={'/Logo/admin-sidebar/main/Favourites.svg'}
+                                    alt={'dashboard'}
+                                    width={30}
+                                    height={30}
+                                />
+                            </div>
+                            <span className={` me-4 ${clicked === 3 ? 'text-white' : 'text-gray-700'} `}>
+                                    Favourites
                                 </span>
+                            <div className={"bg-red-300 invisible"}>sssss
+
+                            </div>
                         </div>
                     </div>
                     :

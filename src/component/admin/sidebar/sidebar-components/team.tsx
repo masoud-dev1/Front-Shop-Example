@@ -17,10 +17,21 @@ export default function Team(){
                     isOpen
                     ?
                         <div className={" w-9/10 flex justify-start"}>
-                            <div className={`${clicked === 13 ? 'bg-blue-400 ' : 'bg-white'} w-9/10 rounded-lg items-center duration-150 end-auto flex justify-center cursor-pointer`} onClick={() => dispatch(setNumber(13))}>
-                                <span className={` ${clicked === 13 ? 'text-white' : 'text-gray-700'}  `}>
+                            <div className={`${clicked === 13 ? 'bg-blue-400 ' : 'bg-white'} w-9/10 rounded-lg items-center duration-150 end-auto flex justify-between cursor-pointer`} onClick={() => dispatch(setNumber(13))}>
+                                <div className={`${clicked === 13 ? 'invisible' : 'visible'}`}>
+                                    <Image
+                                        src={'/Logo/admin-sidebar/main/team.svg'}
+                                        alt={'dashboard'}
+                                        width={30}
+                                        height={30}
+                                    />
+                                </div>
+                                <span className={` me-4 ${clicked === 13 ? 'text-white' : 'text-gray-700'} `}>
                                     Team
-                                </span>
+                            </span>
+                                <div className={"bg-red-300 invisible"}>sssss
+
+                                </div>
                             </div>
                         </div>
                         :

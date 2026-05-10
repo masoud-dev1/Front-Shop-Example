@@ -16,10 +16,21 @@ export default function ProductButton(){
                 </div>
                 {isOpen ?
                     <div className={" w-9/10 flex justify-start"}>
-                        <div className={`${clicked === 2 ? 'bg-blue-400 ' : 'bg-white'} w-9/10 rounded-lg items-center duration-150 end-auto flex justify-center cursor-pointer`} onClick={() => dispatch(setNumber(2))}>
-                                <span className={` ${clicked === 2 ? 'text-white' : 'text-gray-700'} `}>
+                        <div className={`${clicked === 2 ? 'bg-blue-400 ' : 'bg-white'} w-9/10 rounded-lg items-center duration-150 end-auto flex justify-between cursor-pointer`} onClick={() => dispatch(setNumber(2))}>
+                            <div className={`${clicked === 2 ? 'invisible' : 'visible'}`}>
+                                <Image
+                                    src={'/Logo/admin-sidebar/main/product.svg'}
+                                    alt={'dashboard'}
+                                    width={30}
+                                    height={30}
+                                />
+                            </div>
+                            <span className={` me-4 ${clicked === 2 ? 'text-white' : 'text-gray-700'} `}>
                                     Products
                                 </span>
+                            <div className={"bg-red-300 invisible"}>sssss
+
+                            </div>
                         </div>
                     </div>
                 :

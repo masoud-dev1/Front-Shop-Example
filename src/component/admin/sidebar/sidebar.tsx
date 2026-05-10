@@ -30,14 +30,14 @@ export default function Sidebar() {
     return (
         <>
 
-            <div className={`bg-white h-screen fixed flex flex-col top-0 left-0 ease-out transition-all duration-460 ${isOpen ? 'w-6/40' : 'w-1/40'}`}>
+            <div className={`bg-white h-screen fixed flex flex-col top-0 left-0 ease-out transition-all duration-460 ${isOpen ? 'w-6/40' : 'w-2/40'}`}>
 
                 <div className={"w-full flex flex-row "}>
 
                     {/*Toggle (Humborger) open / close*/}
-                    <div className={`bg-amber-400  duration-450 ease-in-out w-full h-10 flex items-center ${isOpen ? 'flex-cols-2 justify-between' : 'flex-col justify-center'}  mt-5`}>
+                    <div className={`  duration-450 ease-in-out w-full h-10 flex items-center ${isOpen ? 'flex-cols-2 justify-between' : 'flex-col justify-center'}  mt-5`}>
 
-                        {isOpen && <div className={"ms-4 "}>
+                        {isOpen && <div className={"ms-4"}>
                             <Image
                                 src={"/Logo/FigmaName.svg"}
                                 alt={"Figma Logo"}

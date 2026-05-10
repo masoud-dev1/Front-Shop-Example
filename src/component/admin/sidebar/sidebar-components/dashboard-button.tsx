@@ -18,11 +18,22 @@ export default function DashboardButton() {
                     {clicked === 1 && <div className={` ${isOpen ? 'w-2/10' : 'w-10/10'} bg-blue-400 w-2/10 rounded-br-3xl rounded-tr-3xl `}></div>}
                 </div>
                 {isOpen ?
-                    <div className={" w-9/10 flex justify-start"}>
-                        <div className={`${clicked === 1 ? 'bg-blue-400 ' : 'bg-white'} w-9/10 rounded-lg items-center duration-150 end-auto flex justify-center cursor-pointer`} onClick={() => dispatch(setNumber(1))}>
-                                <span className={` ${clicked === 1 ? 'text-white' : 'text-gray-700'} `}>
+                    <div className={" w-9/10 flex justify-start "}>
+                        <div className={`${clicked === 1 ? 'bg-blue-400 ' : 'bg-white'} w-9/10 rounded-lg items-center duration-150 end-auto flex justify-between cursor-pointer`} onClick={() => dispatch(setNumber(1))}>
+                            <div className={`${clicked === 1 ? 'invisible' : 'visible'}`}>
+                                <Image
+                                    src={'/Logo/admin-sidebar/main/dashboard.svg'}
+                                    alt={'dashboard'}
+                                    width={30}
+                                    height={30}
+                                />
+                            </div>
+                                <span className={` me-4 ${clicked === 1 ? 'text-white' : 'text-gray-700'} `}>
                                     Dashboard
                                 </span>
+                            <div className={"bg-red-300 invisible"}>sssss
+
+                            </div>
                         </div>
                     </div>
                 :

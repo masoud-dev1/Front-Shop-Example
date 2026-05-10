@@ -17,10 +17,21 @@ export default function InboxButton(){
                 {
                     isOpen
                     ? <div className={" w-9/10 flex justify-start"}>
-                            <div className={`${clicked === 4 ? 'bg-blue-400 ' : 'bg-white'} w-9/10 rounded-lg items-center duration-150 end-auto flex justify-center cursor-pointer`} onClick={() => dispatch(setNumber(4))}>
-                                <span className={` ${clicked === 4 ? 'text-white' : 'text-gray-700'} `}>
+                            <div className={`${clicked === 4 ? 'bg-blue-400 ' : 'bg-white'} w-9/10 rounded-lg items-center duration-150 end-auto flex justify-between cursor-pointer`} onClick={() => dispatch(setNumber(4))}>
+                                <div className={`${clicked === 4 ? 'invisible' : 'visible'}`}>
+                                    <Image
+                                        src={'/Logo/admin-sidebar/main/invoice.svg'}
+                                        alt={'dashboard'}
+                                        width={30}
+                                        height={30}
+                                    />
+                                </div>
+                                <span className={` me-4 ${clicked === 4 ? 'text-white' : 'text-gray-700'} `}>
                                     Inbox
                                 </span>
+                                <div className={"bg-red-300 invisible"}>sssss
+
+                                </div>
                             </div>
                         </div>
                         :

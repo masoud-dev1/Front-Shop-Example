@@ -17,10 +17,21 @@ export default function Setting(){
                     isOpen
                     ?
                         <div className={" w-9/10 flex justify-start"}>
-                            <div className={`${clicked === 15 ? 'bg-blue-400 ' : 'bg-white'} w-9/10 rounded-lg items-center duration-150 end-auto flex justify-center cursor-pointer`} onClick={() => dispatch(setNumber(15))}>
-                                <span className={` ${clicked === 15 ? 'text-white' : 'text-gray-700'}  `}>
-                                    Setting
-                                </span>
+                            <div className={`${clicked === 15 ? 'bg-blue-400 ' : 'bg-white'} w-9/10 rounded-lg items-center duration-150 end-auto flex justify-between cursor-pointer`} onClick={() => dispatch(setNumber(15))}>
+                                <div className={`${clicked === 15 ? 'invisible' : 'visible'}`}>
+                                    <Image
+                                        src={'/Logo/admin-sidebar/main/settings.svg'}
+                                        alt={'dashboard'}
+                                        width={30}
+                                        height={30}
+                                    />
+                                </div>
+                                <span className={` me-4 ${clicked === 15 ? 'text-white' : 'text-gray-700'} `}>
+                                    Team
+                            </span>
+                                <div className={"bg-red-300 invisible"}>sssss
+
+                                </div>
                             </div>
                         </div>
                         :

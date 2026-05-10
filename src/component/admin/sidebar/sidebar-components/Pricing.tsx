@@ -9,7 +9,7 @@ export default function Pricing(){
     return(
         <>
             {/*pricing [7] */}
-            <div className={" flex flex-col-2 w-full h-3/60"}>
+            <div className={" flex flex-col-2 w-full h-3/60 mt-2"}>
                 <div className={" w-1/10 flex justify-start"}>
                     {clicked === 7 && <div className={` ${isOpen ? 'w-2/10' : 'w-10/10'} bg-blue-400 w-2/10 rounded-br-3xl rounded-tr-3xl `}></div>}
                 </div>
@@ -17,10 +17,21 @@ export default function Pricing(){
                     isOpen 
                     ?
                         <div className={" w-9/10 flex justify-start"}>
-                            <div className={`${clicked === 7 ? 'bg-blue-400 ' : 'bg-white'} w-9/10 rounded-lg items-center duration-150 end-auto flex justify-center cursor-pointer`} onClick={() => dispatch(setNumber(7))}>
-                                <span className={` ${clicked === 7 ? 'text-white' : 'text-gray-700'}  `}>
-                                    pricing
-                                </span>
+                            <div className={`${clicked === 7 ? 'bg-blue-400 ' : 'bg-white'} w-9/10 rounded-lg items-center duration-150 end-auto flex justify-between cursor-pointer`} onClick={() => dispatch(setNumber(7))}>
+                                <div className={`${clicked === 7 ? 'invisible' : 'visible'}`}>
+                                    <Image
+                                        src={'/Logo/admin-sidebar/main/pricing.svg'}
+                                        alt={'dashboard'}
+                                        width={30}
+                                        height={30}
+                                    />
+                                </div>
+                                <span className={` me-4 ${clicked === 7 ? 'text-white' : 'text-gray-700'} `}>
+                                    Pricing
+                            </span>
+                                <div className={"bg-red-300 invisible"}>sssss
+
+                                </div>
                             </div>
                         </div>
                         :
