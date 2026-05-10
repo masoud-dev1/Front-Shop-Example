@@ -26,7 +26,7 @@ export default function RootLayout({
 
         <html dir="ltr" lang="eng" className={"overflow-x-hidden"}>
           <body className="bg-slate-500">
-          {children}
+             {children}
           </body>
         </html>
     );
