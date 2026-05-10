@@ -35,7 +35,7 @@ export default function Sidebar() {
                 <div className={"w-full flex flex-row "}>
 
                     {/*Toggle (Humborger) open / close*/}
-                    <div className={`bg-amber-400  duration-450 ease-in-out w-full h-10 flex items-center ${isOpen ? 'flex-cols-2' : 'flex-col'} justify-between mt-5`}>
+                    <div className={`bg-amber-400  duration-450 ease-in-out w-full h-10 flex items-center ${isOpen ? 'flex-cols-2 justify-between' : 'flex-col justify-center'}  mt-5`}>
 
                         {isOpen && <div className={"ms-4 "}>
                             <Image
@@ -46,19 +46,21 @@ export default function Sidebar() {
                             />
                         </div>}
 
-                        <button className={`rounded w-10 duration-400 ease-out h-5 ${isOpen ? '' : 'ms-2'}`}
+                        <button className={`bg-blue-400 rounded w-6 duration-400 cursor-pointer ease-out ease-in-out h-5 ${isOpen ? 'me-5' : ''}`}
                                 onClick={() => dispatch(toggle())}>
                             <Image
                                 src={"/Logo/Humborger.png"}
                                 alt={'ds'}
                                 width={25}
                                 height={25}
+                                className={"rounded"}
                             />
                         </button>
                     </div>
 
                 </div>
 
+                {/*title button*/}
                 <div className={" flex flex-col h-screen overflow-y-auto"}>
                     <DashboardButton/>
                     <ProductButton/>
@@ -67,7 +69,7 @@ export default function Sidebar() {
                     <OrderListButton/>
                     <ProductStock/>
                     <div className={"bg-gray-300 h-1/900 mt-1"}></div>
-                    <div className={`mt-3`}><span className={`ms-8  font-semibold text-gray-600`}>Pages</span></div>
+                    <div className={`mt-3`}><span className={`ms-8  font-semibold text-gray-600 duration-500 ease-in-out`}>{isOpen && 'pricing'}</span></div>
                     <Pricing/>
                     <Calender/>
                     <ToDo/>
@@ -75,14 +77,10 @@ export default function Sidebar() {
                     <Invoice/>
                     <UiElements/>
                     <Team/>
-                    <Table/>
                     <div className={"bg-gray-300 h-1/900 mt-1"}></div>
                     <Setting/>
                     <Logout/>
-
-
                 </div>
-
             </div>
         </>
     )
