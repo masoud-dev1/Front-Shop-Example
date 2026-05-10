@@ -4,19 +4,35 @@ import {useState} from "react";
 import {useDispatch, useSelector} from "react-redux";
 import {toggle} from "@/redux/slice/adminNavbarAnimation";
 import Image from "next/image";
+import DashboardButton from "@/component/admin/sidebar/sidebar-components/dashboard-button";
+import ProductButton from "@/component/admin/sidebar/sidebar-components/Product-Button";
+import FavoritesButton from "@/component/admin/sidebar/sidebar-components/Favorites-Button";
+import InboxButton from "@/component/admin/sidebar/sidebar-components/Inbox-Button";
+import OrderListButton from "@/component/admin/sidebar/sidebar-components/orderlist-button";
+import ProductStock from "@/component/admin/sidebar/sidebar-components/product-stock";
+import Pricing from "@/component/admin/sidebar/sidebar-components/Pricing";
+import Calender from "@/component/admin/sidebar/sidebar-components/Calender";
+import ToDo from "@/component/admin/sidebar/sidebar-components/To-Do";
+import Contact from "@/component/admin/sidebar/sidebar-components/Contact";
+import Invoice from "@/component/admin/sidebar/sidebar-components/Invoice";
+import UiElements from "@/component/admin/sidebar/sidebar-components/ui-elements";
+import Team from "@/component/admin/sidebar/sidebar-components/team";
+import Table from "@/component/admin/sidebar/sidebar-components/Table";
+import Setting from "@/component/admin/sidebar/sidebar-components/Setting";
+import Logout from "@/component/admin/sidebar/sidebar-components/Logout";
 
 export default function Sidebar() {
 
-    const isOpen = useSelector(state => state.adminNavbarAnimation.isOpen);
+    const isOpen = useSelector((state: any) => state.adminNavbarAnimation.isOpen);
     const dispatch = useDispatch();
     const [clicked, setClicked] = useState<number>(0);
 
     return (
         <>
 
-            <div className={`bg-sky-200  h-237 fixed left-0 ease-out transition-all duration-460 ${isOpen ? 'w-6/40' : 'w-1/40'}`}>
+            <div className={`bg-white h-screen fixed flex flex-col top-0 left-0 ease-out transition-all duration-460 ${isOpen ? 'w-6/40' : 'w-1/40'}`}>
 
-                <div className={"bg-green-200 w-full  flex flex-row "}>
+                <div className={"w-full flex flex-row "}>
 
                     {/*Toggle (Humborger) open / close*/}
                     <div className={`bg-amber-400  duration-450 ease-in-out w-full h-10 flex items-center ${isOpen ? 'flex-cols-2' : 'flex-col'} justify-between mt-5`}>
@@ -43,97 +59,29 @@ export default function Sidebar() {
 
                 </div>
 
-                <div className={"bg-gray-400 h-full w-full"}>
+                <div className={" flex flex-col h-screen overflow-y-auto"}>
+                    <DashboardButton/>
+                    <ProductButton/>
+                    <FavoritesButton/>
+                    <InboxButton/>
+                    <OrderListButton/>
+                    <ProductStock/>
+                    <div className={"bg-gray-300 h-1/900 mt-1"}></div>
+                    <div className={`mt-3`}><span className={`ms-8  font-semibold text-gray-600`}>Pages</span></div>
+                    <Pricing/>
+                    <Calender/>
+                    <ToDo/>
+                    <Contact/>
+                    <Invoice/>
+                    <UiElements/>
+                    <Team/>
+                    <Table/>
+                    <div className={"bg-gray-300 h-1/900 mt-1"}></div>
+                    <Setting/>
+                    <Logout/>
 
-                    {/*Dashboarad  [1] */}
-                    <div className={"bg-red-300 flex flex-col-2 w-full h-3/50 mt-5"}>
-                        <div className={"bg-emerald-100 w-1/10 flex justify-start"}>
-                            {clicked === 1 && <div className={"bg-blue-400 w-2/10 rounded-br-3xl rounded-tr-3xl "}></div>}
-                        </div>
-                        <div className={"bg-emerald-200 w-9/10 flex justify-start"}>
-                            <div className={`${clicked === 1 ? 'bg-blue-400 ' : 'bg-white'} w-9/10 rounded-lg items-center duration-150 end-auto flex justify-center cursor-pointer`} onClick={() => setClicked(1)}>
-                                <span className={` ${clicked === 1 ? 'text-white' : 'text-gray-700'} text-lg `}>
-                                    Dashboard
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-
-                    {/*Products  [2] */}
-                    <div className={"bg-red-300 flex flex-col-2 w-full h-3/50"}>
-                        <div className={"bg-emerald-100 w-1/10 flex justify-start"}>
-                            {clicked === 2 && <div className={"bg-blue-400 w-2/10 rounded-br-3xl rounded-tr-3xl "}></div>}
-                        </div>
-                        <div className={"bg-emerald-200 w-9/10 flex justify-start"}>
-                            <div className={`${clicked === 2 ? 'bg-blue-400 ' : 'bg-white'} w-9/10 rounded-lg items-center duration-150 end-auto flex justify-center cursor-pointer`} onClick={() => setClicked(2)}>
-                                <span className={` ${clicked === 2 ? 'text-white' : 'text-gray-700'} text-lg `}>
-                                    Products
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-
-                    {/*Favorites [3] */}
-                    <div className={"bg-red-300 flex flex-col-2 w-full h-3/50"}>
-                        <div className={"bg-emerald-100 w-1/10 flex justify-start"}>
-                            {clicked === 3 && <div className={"bg-blue-400 w-2/10 rounded-br-3xl rounded-tr-3xl "}></div>}
-                        </div>
-                        <div className={"bg-emerald-200 w-9/10 flex justify-start"}>
-                            <div className={`${clicked === 3 ? 'bg-blue-400 ' : 'bg-white'} w-9/10 rounded-lg items-center duration-150 end-auto flex justify-center cursor-pointer`} onClick={() => setClicked(3)}>
-                                <span className={` ${clicked === 3 ? 'text-white' : 'text-gray-700'} text-lg `}>
-                                    Favorites
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-
-                    {/*Inbox  [4] */}
-                    <div className={"bg-red-300 flex flex-col-2 w-full h-3/50"}>
-                        <div className={"bg-emerald-100 w-1/10 flex justify-start"}>
-                            {clicked === 4 && <div className={"bg-blue-400 w-2/10 rounded-br-3xl rounded-tr-3xl "}></div>}
-                        </div>
-                        <div className={"bg-emerald-200 w-9/10 flex justify-start"}>
-                            <div className={`${clicked === 4 ? 'bg-blue-400 ' : 'bg-white'} w-9/10 rounded-lg items-center duration-150 end-auto flex justify-center cursor-pointer`} onClick={() => setClicked(4)}>
-                                <span className={` ${clicked === 4 ? 'text-white' : 'text-gray-700'} text-lg `}>
-                                    Inbox
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-
-                    {/*Order Lists  [5] */}
-                    <div className={"bg-red-300 flex flex-col-2 w-full h-3/50"}>
-                        <div className={"bg-emerald-100 w-1/10 flex justify-start"}>
-                            {clicked === 5 && <div className={"bg-blue-400 w-2/10 rounded-br-3xl rounded-tr-3xl "}></div>}
-                        </div>
-                        <div className={"bg-emerald-200 w-9/10 flex justify-start"}>
-                            <div className={`${clicked === 5 ? 'bg-blue-400 ' : 'bg-white'} w-9/10 rounded-lg items-center duration-150 end-auto flex justify-center cursor-pointer`} onClick={() => setClicked(5)}>
-                                <span className={` ${clicked === 5 ? 'text-white' : 'text-gray-700'} text-lg `}>
-                                    Order Lists
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-
-                    {/*Products Stock  [6] */}
-                    <div className={"bg-red-300 flex flex-col-2 w-full h-3/50"}>
-                        <div className={"bg-emerald-100 w-1/10 flex justify-start"}>
-                            {clicked === 6 && <div className={"bg-blue-400 w-2/10 rounded-br-3xl rounded-tr-3xl "}></div>}
-                        </div>
-                        <div className={"bg-emerald-200 w-9/10 flex justify-start"}>
-                            <div className={`${clicked === 6 ? 'bg-blue-400 ' : 'bg-white'} w-9/10 rounded-lg items-center duration-150 end-auto flex justify-center cursor-pointer`} onClick={() => setClicked(6)}>
-                                <span className={` ${clicked === 6 ? 'text-white' : 'text-gray-700'} text-lg `}>
-                                    Products Stock
-                                </span>
-                            </div>
-                        </div>
-                    </div>
 
                 </div>
-
-
-
-
 
             </div>
         </>
