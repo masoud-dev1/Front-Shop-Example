@@ -20,6 +20,7 @@ import Team from "@/component/admin/sidebar/sidebar-components/team";
 import Table from "@/component/admin/sidebar/sidebar-components/Table";
 import Setting from "@/component/admin/sidebar/sidebar-components/Setting";
 import Logout from "@/component/admin/sidebar/sidebar-components/Logout";
+import "../../../app/admin/admin.css"
 
 export default function Sidebar() {
 
@@ -46,14 +47,14 @@ export default function Sidebar() {
                             />
                         </div>}
 
-                        <button className={`bg-blue-400 rounded w-6 duration-400 cursor-pointer ease-out ease-in-out h-5 ${isOpen ? 'me-5' : ''}`}
+                        <button className={` rounded  w-6 duration-400 cursor-pointer ease-out ease-in-out h-5 ${isOpen ? 'me-5' : ''}`}
                                 onClick={() => dispatch(toggle())}>
                             <Image
                                 src={"/Logo/Humborger.png"}
                                 alt={'ds'}
                                 width={25}
                                 height={25}
-                                className={"rounded"}
+                                className={"rounded-3xl"}
                             />
                         </button>
                     </div>
@@ -70,13 +71,15 @@ export default function Sidebar() {
                     <ProductStock/>
                     <div className={"bg-gray-300 h-1/900 mt-1"}></div>
                     <div className={`mt-3`}><span className={`ms-8  font-semibold text-gray-600 duration-500 ease-in-out`}>{isOpen && 'pricing'}</span></div>
-                    <Pricing/>
-                    <Calender/>
-                    <ToDo/>
-                    <Contact/>
-                    <Invoice/>
-                    <UiElements/>
-                    <Team/>
+                    <div className={"h-5/10 overflow-y-auto no-scrollbar w-full text-nowrap"}>
+                        <Pricing/>
+                        <Calender/>
+                        <ToDo/>
+                        <Contact/>
+                        <Invoice/>
+                        <UiElements/>
+                        <Team/>
+                    </div>
                     <div className={"bg-gray-300 h-1/900 mt-1"}></div>
                     <Setting/>
                     <Logout/>

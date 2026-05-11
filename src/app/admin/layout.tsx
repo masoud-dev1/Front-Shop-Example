@@ -6,7 +6,7 @@ export default function AdminLayout({children}: {children: ReactNode})
 {
 
     return(
-        <div className={"bg-slate-200 h-screen"}>
+        <div className={"bg-slate-200 h-screen "}>
             <AdminSidebarNavbar/>
             {children}
         </div>
