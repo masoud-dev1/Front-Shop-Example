@@ -36,7 +36,13 @@ export default function Pricing(){
                         </div>
                         :
                         <div className={"mx-auto my-auto cursor-pointer"} onClick={() => dispatch(setNumber(7))}>
-                            <Image src={'/Logo/admin-sidebar/main/pricing.svg'} alt={'pricing'} width={30} height={30} />
+                            {
+                                clicked === 7
+                                ?
+                                    <Image src={'/Logo/admin-sidebar/color/pricing.svg'} alt={'pricing'} width={30} height={30} />
+                                    :
+                                    <Image src={'/Logo/admin-sidebar/main/pricing.svg'} alt={'pricing'} width={30} height={30} />
+                            }
                         </div>
                 }
             </div>

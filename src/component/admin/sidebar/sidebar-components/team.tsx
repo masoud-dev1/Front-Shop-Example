@@ -36,7 +36,13 @@ export default function Team(){
                         </div>
                         :
                         <div className={"mx-auto my-auto cursor-pointer"} onClick={() => dispatch(setNumber(13))}>
-                            <Image src={'/Logo/admin-sidebar/main/team.svg'} alt={'team'} width={30} height={30}/>
+                            {
+                                clicked === 13
+                                ?
+                                    <Image src={'/Logo/admin-sidebar/color/team.svg'} alt={'team'} width={30} height={30}/>
+                                    :
+                                    <Image src={'/Logo/admin-sidebar/main/team.svg'} alt={'team'} width={30} height={30}/>
+                            }
                         </div>
                 }
             </div>

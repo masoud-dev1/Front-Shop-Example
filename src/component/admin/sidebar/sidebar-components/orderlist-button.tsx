@@ -35,7 +35,13 @@ export default function OrderListButton(){
                     </div>
                     :
                     <div className={"mx-auto my-auto cursor-pointer"} onClick={() => dispatch(setNumber(5))}>
-                        <Image src={'/Logo/admin-sidebar/main/orderlist.svg'} alt={'order-list'} width={30} height={30}/>
+                        {
+                            clicked === 5
+                            ?
+                                <Image src={'/Logo/admin-sidebar/color/orderlist.svg'} alt={'order-list'} width={30} height={30}/>
+                                :
+                                <Image src={'/Logo/admin-sidebar/main/orderlist.svg'} alt={'order-list'} width={30} height={30}/>
+                        }
                     </div>
                 }
             </div>

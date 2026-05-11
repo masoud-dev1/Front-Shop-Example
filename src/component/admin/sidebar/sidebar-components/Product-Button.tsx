@@ -35,12 +35,23 @@ export default function ProductButton(){
                     </div>
                 :
                     <div className={"mx-auto my-auto cursor-pointer"} onClick={() => dispatch(setNumber(2))}>
-                        <Image
-                            src={'/Logo/admin-sidebar/main/product.svg'}
-                            alt={'product'}
-                            width={30}
-                            height={30}
-                        />
+                        {
+                            clicked === 2
+                            ?
+                                <Image
+                                    src={'/Logo/admin-sidebar/color/product.svg'}
+                                    alt={'product'}
+                                    width={30}
+                                    height={30}
+                                />
+                                :
+                                <Image
+                                    src={'/Logo/admin-sidebar/main/product.svg'}
+                                    alt={'product'}
+                                    width={30}
+                                    height={30}
+                                />
+                        }
                     </div>
                 }
             </div>

@@ -38,13 +38,25 @@ export default function DashboardButton() {
                     </div>
                 :
                     <div className={"mx-auto my-auto cursor-pointer"} onClick={() => dispatch(setNumber(1))}>
-                        <Image
-                            src={'/Logo/admin-sidebar/main/dashboard.svg'}
-                            alt={'dashboard'}
-                            width={30}
-                            height={30}
-                            color={"red"}
-                        />
+                        {
+                            clicked === 1
+                            ?
+                                <Image
+                                    src={'/Logo/admin-sidebar/color/dashboard.svg'}
+                                    alt={'dashboard'}
+                                    width={30}
+                                    height={30}
+                                    color={"red"}
+                                />
+                                :
+                                <Image
+                                    src={'/Logo/admin-sidebar/main/dashboard.svg'}
+                                    alt={'dashboard'}
+                                    width={30}
+                                    height={30}
+                                    color={"red"}
+                                />
+                        }
                     </div>
                 }
             </div>

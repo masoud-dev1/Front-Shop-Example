@@ -36,7 +36,13 @@ export default function Calender(){
                         </div>
                         :
                         <div className={"mx-auto my-auto cursor-pointer"} onClick={() => dispatch(setNumber(8))}>
-                            <Image src={'/Logo/admin-sidebar/main/calendar.svg'} alt={'calender'} width={30} height={30} />
+                            {
+                                clicked === 8
+                                ?
+                                    <Image src={'/Logo/admin-sidebar/color/calendar.svg'} alt={'calender'} width={30} height={30} />
+                                    :
+                                    <Image src={'/Logo/admin-sidebar/main/calendar.svg'} alt={'calender'} width={30} height={30} />
+                            }
                         </div>
                 }
             </div>

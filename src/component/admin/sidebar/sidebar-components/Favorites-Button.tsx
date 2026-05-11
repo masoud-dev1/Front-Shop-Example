@@ -35,12 +35,23 @@ export default function FavoritesButton(){
                     </div>
                     :
                     <div className={"mx-auto my-auto cursor-pointer"} onClick={() => dispatch(setNumber(3))}>
-                        <Image
-                            src={'/Logo/admin-sidebar/main/Favourites.svg'}
-                            alt={'favorites'}
-                            width={30}
-                            height={30}
-                        />
+                        {
+                            clicked === 3
+                            ?
+                                <Image
+                                    src={'/Logo/admin-sidebar/color/Favourites.svg'}
+                                    alt={'favorites'}
+                                    width={30}
+                                    height={30}
+                                />
+                                :
+                                <Image
+                                    src={'/Logo/admin-sidebar/main/Favourites.svg'}
+                                    alt={'favorites'}
+                                    width={30}
+                                    height={30}
+                                />
+                        }
                     </div>
                 }
             </div>

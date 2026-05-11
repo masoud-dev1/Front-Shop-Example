@@ -36,7 +36,13 @@ export default function ToDo(){
                         </div>
                         :
                         <div className={"mx-auto my-auto cursor-pointer"} onClick={() => dispatch(setNumber(9))}>
-                            <Image src={'/Logo/admin-sidebar/main/todo.svg'} alt={'sdad'} width={30} height={30} />
+                            {
+                                clicked === 9
+                                ?
+                                    <Image src={'/Logo/admin-sidebar/color/todo.svg'} alt={'sdad'} width={30} height={30} />
+                                    :
+                                    <Image src={'/Logo/admin-sidebar/main/todo.svg'} alt={'sdad'} width={30} height={30} />
+                            }
                         </div>
                 }
             </div>
