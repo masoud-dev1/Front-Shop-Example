@@ -13,7 +13,7 @@ export default function DashboardButton() {
     return(
         <>
             {/*Dashboarad  [1] */}
-            <div className={" flex flex-col-2 w-full h-3/55 mt-5 overflow-y-auto"}>
+            <div className={" flex flex-col-2 w-full h-4/60 mt-5 overflow-y-auto "}>
                 <div className={" w-1/10 flex justify-start"}>
                     {clicked === 1 && <div className={` ${isOpen ? 'w-2/10' : 'w-10/10'} bg-blue-400 w-2/10 rounded-br-3xl rounded-tr-3xl `}></div>}
                 </div>

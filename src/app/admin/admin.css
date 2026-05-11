@@ -1,0 +1,12 @@
+@layer utilities {
+    /* مخفی کردن اسکرول بار برای Chrome, Safari و Opera */
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* مخفی کردن اسکرول بار برای IE, Edge و Firefox */
+    .no-scrollbar {
+        -ms-overflow-style: none;  /* IE و Edge قدیمی */
+        scrollbar-width: none;     /* Firefox */
+    }
+}

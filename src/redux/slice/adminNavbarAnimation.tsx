@@ -2,7 +2,7 @@ import {createSlice} from "@reduxjs/toolkit";
 
 const adminNavbarAnimation = createSlice({
     name: "adminNavbarAnimation",
-    initialState: {isOpen : false},
+    initialState: {isOpen : true},
     reducers: {
         toggle: (state) => {
             state.isOpen = !state.isOpen;

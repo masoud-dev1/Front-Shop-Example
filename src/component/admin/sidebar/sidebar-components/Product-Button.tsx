@@ -10,7 +10,7 @@ export default function ProductButton(){
     return(
         <>
             {/*Products  [2] */}
-            <div className={" flex flex-col-2 w-full h-3/55"}>
+            <div className={" flex flex-col-2 w-full h-4/60"}>
                 <div className={" w-1/10 flex justify-start"}>
                     {clicked === 2 && <div className={`bg-blue-400 ${isOpen ? "w-2/10" : 'w-10/10'} rounded-br-3xl rounded-tr-3xl duration-500 ease-in-out`}></div>}
                 </div>
