@@ -36,7 +36,13 @@ export default function InboxButton(){
                         </div>
                         :
                         <div className={"mx-auto my-auto cursor-pointer"} onClick={() => dispatch(setNumber(4))}>
-                            <Image src={'/Logo/admin-sidebar/main/invoice.svg'} alt={'Invoice'} width={30} height={30}/>
+                            {
+                                clicked === 4
+                                ?
+                                    <Image src={'/Logo/admin-sidebar/color/invoice.svg'} alt={'Invoice'} width={30} height={30}/>
+                                    :
+                                    <Image src={'/Logo/admin-sidebar/main/invoice.svg'} alt={'Invoice'} width={30} height={30}/>
+                            }
                         </div>
                 }
 

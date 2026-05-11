@@ -36,7 +36,13 @@ export default function Invoice(){
                         </div>
                         :
                         <div className={"mx-auto my-auto cursor-pointer"} onClick={() => dispatch(setNumber(11))}>
-                            <Image src={'/Logo/admin-sidebar/main/invoice.svg'} alt={'invoice'} width={30} height={30}/>
+                            {
+                                clicked === 11
+                                ?
+                                    <Image src={'/Logo/admin-sidebar/color/invoice.svg'} alt={'invoice'} width={30} height={30}/>
+                                    :
+                                    <Image src={'/Logo/admin-sidebar/main/invoice.svg'} alt={'invoice'} width={30} height={30}/>
+                            }
                         </div>
                 }
             </div>

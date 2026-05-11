@@ -8,11 +8,8 @@ import {Provider} from "react-redux";
 
 export default function Home() {
     return (
-        <Provider store={store}>
-            <div className={"bg-slate-100"}>
-                <AdminSidebarNavbar/>
-                <div className={"h-10000 w-22"}>sd</div>
-            </div>
-        </Provider>
+      <div>
+          Homeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
+      </div>
     );
 }

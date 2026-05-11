@@ -36,12 +36,23 @@ export default function Setting(){
                         </div>
                         :
                         <div className={"mx-auto my-auto cursor-pointer"} onClick={() => dispatch(setNumber(15))}>
-                            <Image
-                            src={"/Logo/admin-sidebar/main/settings.svg"}
-                            alt={`Setting`}
-                            width={30}
-                            height={30}
-                            />
+                            {
+                                clicked === 15
+                                ?
+                                    <Image
+                                        src={"/Logo/admin-sidebar/color/settings.svg"}
+                                        alt={`Setting`}
+                                        width={30}
+                                        height={30}
+                                    />
+                                    :
+                                    <Image
+                                        src={"/Logo/admin-sidebar/main/settings.svg"}
+                                        alt={`Setting`}
+                                        width={30}
+                                        height={30}
+                                    />
+                            }
                         </div>
                 }
             </div>

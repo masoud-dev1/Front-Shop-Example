@@ -35,7 +35,13 @@ export default function UiElements(){
                         </div>
                         :
                         <div className={"mx-auto my-auto cursor-pointer"} onClick={() => dispatch(setNumber(12))}>
-                            <Image src={'/Logo/admin-sidebar/main/uielement.svg'} alt={'ui'} width={30} height={30}/>
+                            {
+                                clicked === 12
+                                ?
+                                    <Image src={'/Logo/admin-sidebar/color/uielement.svg'} alt={'ui'} width={30} height={30}/>
+                                    :
+                                    <Image src={'/Logo/admin-sidebar/main/uielement.svg'} alt={'ui'} width={30} height={30}/>
+                            }
                         </div>
                 }
             </div>

@@ -36,7 +36,13 @@ export default function Contact(){
                         </div>
                         :
                         <div className={"mx-auto my-auto cursor-pointer"} onClick={() => dispatch(setNumber(10))}>
-                            <Image src={'/Logo/admin-sidebar/main/contact.svg'} alt={'contact'} width={30} height={30} />
+                            {
+                                clicked === 10
+                                ?
+                                    <Image src={'/Logo/admin-sidebar/color/contact.svg'} alt={'contact'} width={30} height={30} />
+                                    :
+                                    <Image src={'/Logo/admin-sidebar/main/contact.svg'} alt={'contact'} width={30} height={30} />
+                            }
                         </div>
                 }
             </div>

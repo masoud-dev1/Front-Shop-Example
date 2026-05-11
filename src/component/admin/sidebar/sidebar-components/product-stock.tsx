@@ -36,7 +36,13 @@ export default function ProductStock(){
                         </div>
                         :
                         <div className={"mx-auto my-auto cursor-pointer"} onClick={() => dispatch(setNumber(6))}>
-                            <Image src={'/Logo/admin-sidebar/main/product.svg'} alt={'product'} width={30} height={30}/>
+                            {
+                                clicked === 6
+                                ?
+                                    <Image src={'/Logo/admin-sidebar/color/product.svg'} alt={'product'} width={30} height={30}/>
+                                    :
+                                    <Image src={'/Logo/admin-sidebar/main/product.svg'} alt={'product'} width={30} height={30}/>
+                            }
                         </div>
                 }
             </div>
