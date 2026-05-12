@@ -13,7 +13,7 @@ export default function ProductSlideAdmin(){
 
                 <div className={"  pl-6 w-full h-full flex flex-col-2"}>
                     {/*Title*/}
-                    <div className={" w-3/4 h-full flex flex-col"}>
+                    <div className={" w-3/4 h-full flex flex-col mt-3"}>
                         <span className={"  text-gray-800  block text-nowrap"}>Apple Macbook M4 Pro</span>
                         <span className={" text-blue-500 block text-sm"}>$2500</span>
                         <div className={" w-full flex flex-col-2"}>
