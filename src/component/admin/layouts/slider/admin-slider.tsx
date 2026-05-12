@@ -15,7 +15,7 @@ export default function AdminSlider() {
     const swiperRef = useRef<SwiperType | null>(null);
 
     return (
-        <div className=" bg-red-500 flex max-h-full  group">
+        <div className=" w-full max-h-[100%] flex relative">
 
                 <Swiper
                     modules={[Navigation]}
@@ -24,27 +24,24 @@ export default function AdminSlider() {
                     onBeforeInit={(swiper: SwiperType) => {
                         swiperRef.current = swiper;
                     }}
-                    className="w-full"
+                    className="w-full rounded-3xl "
                 >
                     <SwiperSlide>
                         <Slide1/>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className="h-64 bg-gray-300 flex items-center justify-center rounded-lg">
-                            اسلاید ۲
-                        </div>
+                        <Slide1/>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className="h-64 bg-gray-400 flex items-center justify-center rounded-lg">
-                            اسلاید ۳
-                        </div>
+                        <Slide1/>
                     </SwiperSlide>
                 </Swiper>
 
                 {/* دکمه قبلی */}
                 <button
                     onClick={() => swiperRef.current?.slidePrev()}
-                    className="absolute left-4 top-1/2 -translate-y-1/2 bg-black/70 text-white p-2 rounded-full z-10 hover:bg-black transition"
+                    className="absolute left-10 w-10 h-10 top-1/2 -translate-y-1/2 bg-gray-300 text-blac p-2 rounded-full z-10  transition
+                    cursor-pointer"
                     aria-label="اسلاید قبلی"
                 >
                     ❮
@@ -53,7 +50,7 @@ export default function AdminSlider() {
                 {/* دکمه بعدی */}
                 <button
                     onClick={() => swiperRef.current?.slideNext()}
-                    className="absolute right-4 top-1/2 -translate-y-1/2 bg-black/70 text-white p-2 rounded-full z-10 hover:bg-black transition"
+                    className="absolute w-10 h-10 right-10 top-1/2 -translate-y-1/2 bg-gray-300 text-black p-2 rounded-full z-10  transition cursor-pointer"
                     aria-label="اسلاید بعدی"
                 >
                     ❯
