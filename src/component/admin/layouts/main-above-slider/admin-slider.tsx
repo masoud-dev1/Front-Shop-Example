@@ -8,14 +8,14 @@ import type { Swiper as SwiperType } from "swiper";
 // ایمپورت‌های CSS الزامی
 import "swiper/css";
 import "swiper/css/navigation";
-import Slide1 from "@/component/admin/layouts/slider/sildes/slide1";
+import Slide1 from "@/component/admin/layouts/main-above-slider/sildes/slide1";
 
 export default function AdminSlider() {
     // رفرنس برای دسترسی به نمونه Swiper
     const swiperRef = useRef<SwiperType | null>(null);
 
     return (
-        <div className=" w-full max-h-[100%] flex relative">
+        <div className="w-full h-full flex relative">
 
                 <Swiper
                     modules={[Navigation]}
@@ -24,7 +24,7 @@ export default function AdminSlider() {
                     onBeforeInit={(swiper: SwiperType) => {
                         swiperRef.current = swiper;
                     }}
-                    className="w-full rounded-3xl "
+                    className="w-full h-full rounded-3xl "
                 >
                     <SwiperSlide>
                         <Slide1/>

@@ -44,7 +44,7 @@ export default function Sidebar() {
                                 height={"60"}
                             />
                         </div>}
-                        <button className={` rounded  w-6 duration-400 cursor-pointer ease-out ease-in-out h-5 ${isOpen ? 'me-5' : ''}`}
+                        <button className={` rounded  w-6 duration-400 cursor-pointer ease-in-out h-5 ${isOpen ? 'me-5' : ''}`}
                                 onClick={() => dispatch(toggle())}>
                             <Image
                                 src={"/Logo/Humborger.png"}
