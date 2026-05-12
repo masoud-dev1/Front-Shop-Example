@@ -4,7 +4,7 @@ export default function AdminDropDown(){
     return(
         <>
             {/*end*/}
-            <div className={" w-2/40 flex items-center"}>
+            <div className={" min-w-10 max-w-30  flex items-center bg-gray-400"}>
                 <Image
                     src={"/Logo/Drop-Down.svg"}
                     alt={"drop-down"}
