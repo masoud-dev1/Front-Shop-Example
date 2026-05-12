@@ -3,7 +3,7 @@ import {createSlice} from "@reduxjs/toolkit";
 const sidebarButton = createSlice({
     name: "sidebarButton",
     initialState: {
-        number: 0
+        number: 2
     },
     reducers: {
         setNumber(state , action){

@@ -4,7 +4,7 @@ export default function AdminLanguage(){
     return(
         <>
             {/*language*/}
-            <div className={" w-8/40 flex flex-col-2 me-7"}>
+            <div className={" max-w-8/40 flex flex-col-2 me-3"}>
                 <div className={" w-9/20 flex items-center"}>
                     <Image
                         src="/Logo/English-Flag.svg"

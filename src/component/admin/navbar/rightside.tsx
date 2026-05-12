@@ -12,7 +12,7 @@ export default function RightSide(){
                 <AdminNotification/>
                 <AdminLanguage/>
                 <AdminProfile/>
-                <AdminDropDown/>
+                {/*<AdminDropDown/>*/}
             </div>
         </>
     )

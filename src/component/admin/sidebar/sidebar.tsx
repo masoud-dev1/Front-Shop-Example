@@ -32,9 +32,7 @@ export default function Sidebar() {
         <>
 
             <div className={`bg-white h-screen fixed flex flex-col top-0 left-0 ease-out transition-all duration-460 ${isOpen ? 'w-6/40' : 'w-2/40'}`}>
-
                 <div className={"w-full flex flex-row "}>
-
                     {/*Toggle (Humborger) open / close*/}
                     <div className={`  duration-450 ease-in-out w-full h-10 flex items-center ${isOpen ? 'flex-cols-2 justify-between' : 'flex-col justify-center'}  mt-5`}>
 
@@ -46,7 +44,6 @@ export default function Sidebar() {
                                 height={"60"}
                             />
                         </div>}
-
                         <button className={` rounded  w-6 duration-400 cursor-pointer ease-out ease-in-out h-5 ${isOpen ? 'me-5' : ''}`}
                                 onClick={() => dispatch(toggle())}>
                             <Image
