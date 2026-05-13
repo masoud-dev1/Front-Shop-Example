@@ -5,7 +5,6 @@ import AdminLayoutPage from "@/component/admin/layouts/admin-product-layout";
 
 export default function AdminLayout({children}: {children: ReactNode})
 {
-
     return(
         <div className={"bg-slate-200 h-screen w-full "}>
             <AdminSidebarNavbar/>
