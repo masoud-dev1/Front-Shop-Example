@@ -52,7 +52,7 @@ export default function AdminProduct() {
                 }
             </div>
             {
-               Modal && <div className={"bg-stone-200 h-screen w-full absolute opacity-50 z-50"}>
+               Modal && <div className={"bg-stone-500 h-screen w-full absolute opacity-50 z-50"}>
 
                </div>
             }
