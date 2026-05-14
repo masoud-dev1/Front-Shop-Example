@@ -6,11 +6,12 @@ import AdminSidebarNavbar from "@/component/admin/adminSidebarNavbar";
 import store from "@/redux/store/store";
 import {Provider} from "react-redux";
 import HomeComponent from "@/component/app/home/home-component";
+import TopHome from "@/component/app/home/home-component";
 
 export default function Home() {
     return (
       <div>
-          <HomeComponent/>
+          <TopHome />
       </div>
     );
 }
