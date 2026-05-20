@@ -19,6 +19,9 @@ export default function Home() {
           <HomeNavbar/>
           {/*Section1*/}
           <Section1/>
+
+
+          <div className={"h-1000"}></div>
       </div>
     );
 }

@@ -62,7 +62,6 @@ export default function Sec1Left() {
                             {/*<Image src={"/Home/Vector1.svg"} alt={"sd"} width={10} height={15}/>*/}
                         </div>
                     </div>
-
                 </div>
             </div>
         </>
