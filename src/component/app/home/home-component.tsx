@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function TopHome() {
     return (
         // mother component
-        <div className={"bg-stone-950 w-full flex flex-col-3 justify-start  md:justify-center md:h-10 items-center "}>
+        <div className={"bg-stone-950 w-full flex flex-col-3 justify-start  lg:justify-center md:h-10 items-center "}>
 
              {/*invisible Div*/}
              <div className={"  invisible md:w-3/10 "}>s
