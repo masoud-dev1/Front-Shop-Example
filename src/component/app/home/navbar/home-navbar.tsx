@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function HomeNavbar() {
     return (
         <>
-            <div className={"sticky top-0 z-50 bg-white xs:bg-white sm:bg-white md:bg-white  lg:w-full flex xs:justify-between xs:px-2 lg:flex-col-4 items-center pt-10 pb-5 border border-b-gray-300"}>
+            <div className={"sticky top-0 z-50 bg-white xs:bg-white sm:bg-white md:bg-white  lg:w-full flex xs:justify-between xs:px-2 lg:flex-col-4 items-center pt-10 pb-5 border border-b-gray-300 border-r-white border-t-white"}>
                 {/*Exclusive left*/}
                 {/*add lg:ms-4*/}
                 <div className={" md:w-2/10 flex justify-end xs:hidden sm:flex sm:justify-start md:flex md:justify-start lg:flex lg:justify-center lg:ms-4 "}>
