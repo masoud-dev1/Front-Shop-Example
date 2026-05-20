@@ -5,10 +5,9 @@ export default function HomeNavbar() {
         <>
             <div className={" md:bg-white  lg:w-full flex xs:justify-between xs:px-2 lg:flex-col-4 items-center pt-10 pb-5 border border-b-gray-300"}>
                 {/*Exclusive left*/}
-                <div className={" md:w-2/10 flex justify-end xs:hidden sm:flex sm:justify-start md:flex md:justify-center lg:flex lg:justify-end "}>
-                    <div className={" w-1/3"}>
-                        <h1 className={"font-semibold text-2xl me-4  w-full"}>Exclusive</h1>
-                    </div>
+                {/*add lg:ms-4*/}
+                <div className={" md:w-2/10 flex justify-end xs:hidden sm:flex sm:justify-start md:flex md:justify-start lg:flex lg:justify-center lg:ms-4 "}>
+                        <h1 className={" font-semibold text-2xl me-4 w-1/4"}>Exclusive</h1>
                 </div>
                 {/*navbar main*/}
                 <div className={" xs:gap-4 xs:w-1/2 md:w-4/10 flex md:flex-col-4 md:gap-13 justify-center"}>
