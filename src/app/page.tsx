@@ -10,6 +10,7 @@ import TopHome from "@/component/app/home/top-off/home-component";
 import HomeNavbar from "@/component/app/home/navbar/home-navbar";
 import Section1 from "@/component/app/home/section1/section1";
 import Section2 from "@/component/app/home/section2/section2";
+import Section3 from "@/component/app/home/section3/section3";
 
 export default function Home() {
     return (
@@ -22,6 +23,8 @@ export default function Home() {
           <Section1/>
           {/*Section2*/}
           <Section2/>
+          {/*section3*/}
+          <Section3/>
 
 
           <div className={"h-1000"}></div>

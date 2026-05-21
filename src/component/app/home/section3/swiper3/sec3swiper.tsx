@@ -1,9 +1,9 @@
 "use client";
 
-import { useRef } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper/modules";
-import type { Swiper as SwiperType } from "swiper";
+import {useRef} from "react";
+import {Swiper, SwiperSlide} from "swiper/react";
+import {Navigation} from "swiper/modules";
+import type {Swiper as SwiperType} from "swiper";
 
 // ایمپورت‌های CSS الزامی
 import "swiper/css";
@@ -12,59 +12,52 @@ import Sec2Slide from "@/component/app/home/section2/Slides/sec2slide";
 import Sec2Slide1 from "@/component/app/home/section2/Slides/sec2slide1";
 import Sec2Slide2 from "@/component/app/home/section2/Slides/sec2slide2";
 import Sec2Slide3 from "@/component/app/home/section2/Slides/sec2slide3";
+import Sec3Slide from "@/component/app/home/section3/slide/sec3slide";
+import Sec3Slide1 from "@/component/app/home/section3/slide/sec3slide1";
+import Sec3Slide2 from "@/component/app/home/section3/slide/sec3slide2";
+import Sec3Slide3 from "@/component/app/home/section3/slide/sec3slide3";
+import Sec3Slide4 from "@/component/app/home/section3/slide/sec3slide4";
+import Sec3Slide5 from "@/component/app/home/section3/slide/sec3slide5";
 
-export default function Sec2Swiper() {
+export default function Sec3Swiper() {
 
     const swiperRef = useRef<SwiperType | null>(null);
 
     return (
-        <div className=" group">
+        <div className=" group ">
             <Swiper
                 modules={[Navigation]}
                 spaceBetween={20}
-                slidesPerView={4}          // مقدار پیش‌فرض برای صفحه‌عریض
+                slidesPerView={6}          // مقدار پیش‌فرض برای صفحه‌عریض
                 breakpoints={{
-                    0: { slidesPerView: 1 },     // از 0 تا 640px: 1 اسلاید
-                    640: { slidesPerView: 2 },   // 640px به بالا: 2 اسلاید
-                    768: { slidesPerView: 2 },
-                    1024: { slidesPerView: 3 },
-                    1280: { slidesPerView: 4 },
+                    0: {slidesPerView: 1},     // از 0 تا 640px: 1 اسلاید
+                    640: {slidesPerView: 2},   // 640px به بالا: 2 اسلاید
+                    768: {slidesPerView: 3},
+                    1024: {slidesPerView: 4},
+                    1280: {slidesPerView: 6},
                 }}
                 onBeforeInit={(swiper: SwiperType) => {
                     swiperRef.current = swiper;
                 }}
-                className="w-full mt-6"
+                className="w-full mt-10"
             >
                 <SwiperSlide>
-                    <Sec2Slide/>
+                    <Sec3Slide/>
                 </SwiperSlide>
-
                 <SwiperSlide>
-                    <Sec2Slide1/>
+                    <Sec3Slide1/>
                 </SwiperSlide>
-
                 <SwiperSlide>
-                    <Sec2Slide2/>
+                    <Sec3Slide2/>
                 </SwiperSlide>
-
                 <SwiperSlide>
-                    <Sec2Slide3/>
+                    <Sec3Slide3/>
                 </SwiperSlide>
-
                 <SwiperSlide>
-                    <Sec2Slide/>
+                    <Sec3Slide4/>
                 </SwiperSlide>
-
                 <SwiperSlide>
-                    <Sec2Slide1/>
-                </SwiperSlide>
-
-                <SwiperSlide>
-                    <Sec2Slide2/>
-                </SwiperSlide>
-
-                <SwiperSlide>
-                    <Sec2Slide3/>
+                    <Sec3Slide5/>
                 </SwiperSlide>
 
             </Swiper>
