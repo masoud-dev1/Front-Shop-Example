@@ -17,7 +17,7 @@ export default function Section4() {
           <div className={' lg:w-6/10 xl:w-5/10 sm:flex sm:flex-col-2 hidden'}>
             {/*left*/}
             <div className={'w-1/3'}>
-              <h2 className={'text-nowrap font-semibold text-lg sm:text-4xl mt-5 '}>
+              <h2 className={'text-nowrap font-semibold text-lg md:text-4xl mt-5 '}>
                 Best Selling Products
               </h2>
             </div>

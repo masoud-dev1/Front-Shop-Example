@@ -57,7 +57,7 @@ export default function Sec4Swiper() {
   
       </Swiper>
 
-      <button className="bg-red-600  w-40 h-15 rounded absolute top-3 right-6 text-white">View All</button>
+      <button className="bg-red-600  w-40 h-15 rounded absolute sm:top-3 sm:right-6 text-white">View All</button>
     </div>
   );
 }
