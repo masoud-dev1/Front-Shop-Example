@@ -26,7 +26,7 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html dir="ltr" lang="eng" className={"overflow-x-hidden bg-stone-200"}>
+        <html dir="ltr" lang="eng" className={"overflow-x-hidden bg-stone-200 "}>
         <body >
             <ReduxProvider>
                 {children}
