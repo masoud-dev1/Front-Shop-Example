@@ -15,6 +15,7 @@ import Section4 from '@/component/app/home/section4/section4';
 import Section5 from '@/component/app/home/section5/section5';
 import Section6 from '@/component/app/home/section6/section6';
 import Section7 from '@/component/app/home/section7/section7';
+import Section8 from '@/component/app/home/section8/section8';
 
 export default function Home() {
   return (
@@ -46,6 +47,8 @@ export default function Home() {
       <Section6/>
 
       <Section7/>
+
+      <Section8/>
 
       <div className={'h-1000 '}></div>
     </div>
