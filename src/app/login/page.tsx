@@ -12,10 +12,10 @@ export default function Login(){
         <h2 className=" mt-4 font-semibold">enter Your Details Blow</h2>
 
          <div className=" border-b border-b-gray-300 mt-13">
-          <input className="w-full font-semibold focus:outline-none" placeholder="Email"/>
+          <input className="w-full font-semibold focus:outline-none py-2" placeholder="Email"/>
         </div>
         <div className=" border-b border-b-gray-300 mt-13">
-          <input className="w-full font-semibold focus:outline-none" placeholder="Password"/>
+          <input className="w-full font-semibold focus:outline-none py-2" placeholder="Password"/>
         </div>
         <div className="bg-red-600 mt-13 w-full h-15 rounded items-center flex justify-center cursor-pointer ">
           <h2 className="text-white font-semibold ">Login</h2>

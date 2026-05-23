@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Register(){
   return(
-    <div className=" w-full flex flex-col-2 mt-20 mb-40">
+    <div className=" w-full flex flex-col-2 mt-15 mb-40">
       <div className="bg-[#cbe4e9] 2xl:w-24/40 md:flex xs:hidden">
         <Image src={"/Home/register/register.svg"} alt="" width={666} height={55}
          className="mx-auto"/>
@@ -11,13 +11,13 @@ export default function Register(){
         <h2 className=" text-4xl font-semibold text-nowrap">Create an Account</h2>
         <h2 className=" mt-4 font-semibold">enter Your Details Blow</h2>
         <div className=" border-b border-b-gray-300 mt-13">
-          <input className="w-full font-semibold focus:outline-none" placeholder="Name"/>
+          <input className="w-full font-semibold focus:outline-none py-2" placeholder="Name"/>
         </div>
          <div className=" border-b border-b-gray-300 mt-13">
-          <input className="w-full font-semibold focus:outline-none" placeholder="Email"/>
+          <input className="w-full font-semibold focus:outline-none py-2" placeholder="Email"/>
         </div>
         <div className=" border-b border-b-gray-300 mt-13">
-          <input className="w-full font-semibold focus:outline-none" placeholder="Password"/>
+          <input className="w-full font-semibold focus:outline-none py-2" placeholder="Password"/>
         </div>
         <div className="bg-red-600 mt-13 w-full h-15 rounded items-center flex justify-center cursor-pointer ">
           <h2 className="text-white font-semibold ">Create Account</h2>
