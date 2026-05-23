@@ -16,6 +16,8 @@ import Section5 from '@/component/app/home/section5/section5';
 import Section6 from '@/component/app/home/section6/section6';
 import Section7 from '@/component/app/home/section7/section7';
 import Section8 from '@/component/app/home/section8/section8';
+import Section9 from '@/component/app/home/section9/section9';
+import Footer from '@/component/app/home/section9/section9';
 
 export default function Home() {
   return (
@@ -50,7 +52,8 @@ export default function Home() {
 
       <Section8/>
 
-      <div className={'h-1000 '}></div>
+      <Footer/>
+
     </div>
   );
 }
