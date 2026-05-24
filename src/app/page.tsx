@@ -16,19 +16,16 @@ import Section5 from '@/component/app/home/section5/section5';
 import Section6 from '@/component/app/home/section6/section6';
 import Section7 from '@/component/app/home/section7/section7';
 import Section8 from '@/component/app/home/section8/section8';
-import Footer from '@/component/app/home/section9/section9';
+import Footer from '@/component/app/home/footer/footer';
 
 export default function Home() {
   return (
     <div>
-
-      
       {/*black off*/}
       <TopHome />
       {/*Navbar*/}
       <HomeNavbar />
 
-     
       {/*Section1*/}
       <Section1 />
 
@@ -48,16 +45,15 @@ export default function Home() {
       <Section4 />
 
       {/* section5 */}
-      <Section5/>
+      <Section5 />
 
-      <Section6/>
+      <Section6 />
 
-      <Section7/>
+      <Section7 />
 
-      <Section8/>
+      <Section8 />
 
-      <Footer/>
-
+      <Footer />
     </div>
   );
 }

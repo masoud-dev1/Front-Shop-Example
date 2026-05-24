@@ -13,12 +13,12 @@ export default function HomeSwiper() {
     hidden: { 
       opacity: 0, 
       x: 100,
-      transition: { duration: 1, ease: "easeOut" }  // ← حرکت آهسته هنگام ورود
+      transition: { duration: 0.4, ease: "easeOut" }  // ← تغییر سرعت به 0.4 (مثل قبلی)
     },
     visible: { 
       opacity: 1, 
       x: 0,
-      transition: { duration: 1, ease: "easeOut" }
+      transition: { duration: 0.4, ease: "easeOut" }
     },
   };
 
@@ -30,8 +30,6 @@ export default function HomeSwiper() {
       variants={containerVariants}
       whileInView="visible"
       viewport={{ once: true, amount: 0.2 }}
-      whileHover={{ scale: 1.02 }}
-      transition={{ type: "spring", stiffness: 200 }} // ← فقط برای هاور
     >
       <style jsx>{`
         :global(.swiper-pagination-bullet) {

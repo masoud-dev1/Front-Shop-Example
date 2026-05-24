@@ -6,7 +6,7 @@ import store from '@/redux/store/store';
 import ReduxProvider from '@/app/ReduxProvider';
 import TopHome from '@/component/app/home/top-off/home-component';
 import HomeNavbar from '@/component/app/home/navbar/home-navbar';
-import Footer from '@/component/app/home/section9/section9';
+import Footer from '@/component/app/home/footer/footer';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -31,11 +31,7 @@ export default function RootLayout({
   return (
     <html dir="ltr" lang="eng" className={'overflow-x-hidden bg-stone-200 '}>
       <body>
-        <ReduxProvider>
-          
-          {children}
-         
-        </ReduxProvider>
+        <ReduxProvider>{children}</ReduxProvider>
       </body>
     </html>
   );

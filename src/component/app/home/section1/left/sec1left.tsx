@@ -4,10 +4,10 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 
 export default function Sec1Left() {
-  // انیمیشن از سمت چپ
+  // انیمیشن از سمت چپ با سرعت بیشتر
   const variants = {
-    hidden: { opacity: 0, x: -100 },  // شروع: چپ + نامرئی
-    visible: { opacity: 1, x: 0 },    // پایان: جای اصلی
+    hidden: { opacity: 0, x: -100 },
+    visible: { opacity: 1, x: 0 },
   };
 
   return (
@@ -16,11 +16,11 @@ export default function Sec1Left() {
       initial="hidden"
       animate="visible"
       variants={variants}
-      transition={{ duration: 1, ease: "easeOut" }}
-      // (اختیاری) انیمیشن هنگام اسکرول
+      transition={{ duration: 0.4, ease: "easeOut" }}   // ← کاهش زمان به 0.4 ثانیه
       whileInView="visible"
       viewport={{ once: true, amount: 0.2 }}
     >
+      {/* بقیه محتوا بدون تغییر */}
       <div className="hidden lg:flex sm:w-1/3"></div>
 
       <div className="lg:w-2/3 py-4 w-full flex flex-col pt-10 border-r border-r-gray-200">
