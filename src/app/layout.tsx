@@ -32,12 +32,9 @@ export default function RootLayout({
     <html dir="ltr" lang="eng" className={'overflow-x-hidden bg-stone-200 '}>
       <body>
         <ReduxProvider>
-          {/*black off*/}
-          <TopHome />
-          {/*Navbar*/}
-          <HomeNavbar />
+          
           {children}
-          <Footer />
+         
         </ReduxProvider>
       </body>
     </html>

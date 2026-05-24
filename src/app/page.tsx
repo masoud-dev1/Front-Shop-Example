@@ -21,6 +21,13 @@ import Footer from '@/component/app/home/section9/section9';
 export default function Home() {
   return (
     <div>
+
+      
+      {/*black off*/}
+      <TopHome />
+      {/*Navbar*/}
+      <HomeNavbar />
+
      
       {/*Section1*/}
       <Section1 />
@@ -36,6 +43,7 @@ export default function Home() {
       <div className="w-full flex justify-center">
         <div className="bg-gray-200 w-16/20 h-[2px] mt-20"></div>
       </div>
+
       {/*section 4*/}
       <Section4 />
 
@@ -48,6 +56,7 @@ export default function Home() {
 
       <Section8/>
 
+      <Footer/>
 
     </div>
   );

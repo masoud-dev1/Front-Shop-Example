@@ -1,7 +1,18 @@
+import HomeNavbar from "@/component/app/home/navbar/home-navbar";
+import Footer from "@/component/app/home/section9/section9";
+import TopHome from "@/component/app/home/top-off/home-component";
 import Image from "next/image";
 
 export default function Register(){
   return(
+
+   
+    <>
+    
+          {/*black off*/}
+          <TopHome />
+          {/*Navbar*/}
+          <HomeNavbar />
     <div className=" w-full flex flex-col-2 mt-15 mb-40">
       <div className="bg-[#cbe4e9] 2xl:w-24/40 md:flex xs:hidden">
         <Image src={"/Home/register/register.svg"} alt="" width={666} height={55}
@@ -30,5 +41,10 @@ export default function Register(){
         </div>
       </div>
     </div>
+
+    <Footer/>
+    </>
+
+    
   )
 }
