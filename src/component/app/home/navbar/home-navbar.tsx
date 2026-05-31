@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function HomeNavbar() {
     return (
@@ -12,16 +13,16 @@ export default function HomeNavbar() {
                 {/*navbar main*/}
                 <div className={" xs:gap-2 xs:pl-2 xs:w-1/2 md:w-4/10 flex md:flex-col-4 md:gap-13 justify-center "}>
                     <div className={" md:w-1/14 text-center cursor-pointer"}>
-                        <span className={"text-gray-800 xs:text-xs sm:text-base"}>Home</span>
+                        <Link href={"/"}><span className={"text-gray-800 xs:text-xs sm:text-base"}>Home</span></Link>
                     </div>
                     <div className={" md:w-1/14 text-center cursor-pointer"}>
                         <span className={"text-gray-800 xs:text-xs sm:text-base"}>Contact</span>
                     </div>
                     <div className={" md:w-1/14 text-center cursor-pointer"}>
-                        <span className={"text-gray-800 xs:text-xs sm:text-base"}>About</span>
+                        <Link href={"/login"}><span className={"text-gray-800 xs:text-xs sm:text-base"}>About</span></Link>
                     </div>
                     <div className={" md:w-1/10 text-center cursor-pointer"}>
-                        <span className={"text-gray-800 xs:text-xs sm:text-base text-nowrap"}>Sign Up</span>
+                        <Link href={"/register"}><span className={"text-gray-800 xs:text-xs sm:text-base text-nowrap"}>Sign Up</span></Link>
                     </div>
                 </div>
                 {/*searchbar*/}
