@@ -32,14 +32,22 @@ export default function Home() {
       {/*Section2*/}
       <Section2 />
 
+
+        {/*// Line*/}
       <div className="w-full flex justify-center">
         <div className="bg-gray-200 w-16/20  h-[2px] mt-20"></div>
       </div>
+
+
       {/*section3*/}
       <Section3 />
+
+
+        {/*Line*/}
       <div className="w-full flex justify-center">
         <div className="bg-gray-200 w-16/20 h-[2px] mt-20"></div>
       </div>
+
 
       {/*section 4*/}
       <Section4 />
