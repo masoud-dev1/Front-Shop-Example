@@ -12,9 +12,9 @@ export default function Checkout(){
 
     return (
         <>
-            <TopHome />
-            {/*Navbar*/}
-            <HomeNavbar />
+            <TopHome/>
+            <HomeNavbar/>
+
                 <div className="md:flex md:flex-row-2 mx-auto mt-40 w-full  md:w-17/20 md:px-19 p-2">
                     <div className={" w-full md:w-1/2 flex flex-col h-full"}>
                         <h2 className={"text-4xl"}>Billing Details</h2>
