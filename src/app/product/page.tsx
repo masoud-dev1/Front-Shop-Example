@@ -9,6 +9,7 @@ import { FaRegHeart } from "react-icons/fa";
 import { CiDeliveryTruck } from "react-icons/ci";
 import { GiReturnArrow } from "react-icons/gi";
 import { useState } from "react";
+import Section4 from "@/component/app/home/section4/section4";
 
 export default function ProductPage() {
     const [size, setSize] = useState("M");
@@ -129,6 +130,8 @@ export default function ProductPage() {
                     </div>
                 </div>
             </div>
+
+            <Section4/>
 
             <Footer />
         </>
